@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mariscos El Farito · Menú completo</title>
+<meta name="description" content="Menú completo de Mariscos El Farito en una sola página: filets por kilo, pescado entero, camarones y mariscos. Mercedes Norte, Heredia, frente a la Plaza de Deportes.">
+<meta property="og:title" content="Mariscos El Farito · Menú completo">
+<meta property="og:description" content="Todo el menú en una página: filets, pescado entero, camarones y mariscos. Mercedes Norte, Heredia. Tel. 8877-3189">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1B5A9A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B5A9A'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' font-style='italic' font-weight='700' fill='%23EDDFC2' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Libre+Caslon+Text:wght@400;700&family=Libre+Caslon+Display&display=swap">
+<style>
+:root {
+  --paper: #EDDFC2;
+  --paper-2: #E4D3B0;
+  --ink: #1B5A9A;
+  --ink-soft: #3F6F9F;
+  --rule: rgba(27, 90, 154, .35);
+  --chip-bg: #1B5A9A;
+  --chip-fg: #EDDFC2;
+  --font-display: "Leckerli One", "Brush Script MT", cursive;
+  --font-body: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --font-caps: "Libre Caslon Display", Georgia, serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0F2238; --paper-2: #16304D; --ink: #EDDFC2; --ink-soft: #C9BB9C;
+    --rule: rgba(237, 223, 194, .3); --chip-bg: #EDDFC2; --chip-fg: #0F2238; color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.45;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 40px; }
+
+header.brand { text-align: center; display: grid; gap: 4px; padding-block: 8px 12px; }
+.brand h1 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: clamp(2.6rem, 11vw, 3.6rem); line-height: 1.05; margin: 0;
+  text-wrap: balance;
+}
+.brand .sub {
+  font-family: var(--font-caps); text-transform: uppercase; letter-spacing: .18em;
+  font-size: .85rem; color: var(--ink-soft);
+}
+
+.topnav { text-align: center; padding-block: 2px 10px; border-bottom: 1px solid var(--rule); }
+.topnav .btn.ghost { display: inline-block; }
+
+section.cat { padding-block: 20px 4px; }
+section.cat + section.cat { border-top: 1px solid var(--rule); }
+.cat-head { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 12px; margin-bottom: 8px; }
+.cat-head h2 {
+  font-family: var(--font-display); font-weight: 400; margin: 0;
+  font-size: clamp(1.9rem, 8vw, 2.4rem); line-height: 1.1;
+}
+.cat-head .tag {
+  font-family: var(--font-caps); text-transform: uppercase; letter-spacing: .12em; font-size: .9rem;
+}
+ul.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+ul.items li { display: flex; align-items: baseline; gap: 6px; }
+ul.items .name { flex: 0 1 auto; min-width: 0; }
+ul.items .dots { flex: 1 1 auto; border-bottom: 2px dotted var(--rule); transform: translateY(-4px); min-width: 16px; }
+ul.items .price { flex: 0 0 auto; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.updated { margin-top: 24px; text-align: center; font-size: .82rem; color: var(--ink-soft); font-style: italic; }
+
+footer.contact {
+  margin-top: 30px; padding: 22px 18px; background: var(--paper-2); border-radius: 14px;
+  text-align: center; display: grid; gap: 14px;
+}
+footer .addr { margin: 0; }
+.phone { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink); text-decoration: none; }
+.links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.btn {
+  font-family: var(--font-caps); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+  text-decoration: none; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--ink);
+  background: var(--chip-bg); color: var(--chip-fg);
+}
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.handle { font-family: var(--font-caps); letter-spacing: .2em; text-transform: uppercase; font-size: .85rem; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <h1>Mariscos El Farito</h1>
+    <div class="sub">Pescadería · Mercedes Norte, Heredia</div>
+  </header>
+
+  <nav class="topnav" aria-label="Navegación">
+    <a class="btn ghost" href="index.html">Ver por secciones</a>
+  </nav>
+
+  <main id="menu"></main>
+
+  <p class="updated" id="updated"></p>
+
+  <footer class="contact">
+    <p class="addr">Mercedes Norte, Heredia<br>En frente de la Plaza de Deportes</p>
+    <a class="phone" href="tel:+50688773189">Tel. 8877-3189</a>
+    <div class="links">
+      <a class="btn" href="https://wa.me/50688773189" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn ghost" href="https://www.instagram.com/mariscoselfarito" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn ghost" href="https://www.facebook.com/mariscoselfarito" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div class="handle">@mariscoselfarito</div>
+  </footer>
+</div>
+
+<script src="precios.js"></script>
+<script>
+const fmt = n => "₡" + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const menu = document.getElementById("menu");
+
+for (const cat of MENU) {
+  const sec = document.createElement("section");
+  sec.className = "cat";
+  sec.id = cat.id;
+
+  const head = document.createElement("div");
+  head.className = "cat-head";
+  const h2 = document.createElement("h2");
+  h2.textContent = cat.titulo;
+  head.appendChild(h2);
+  if (cat.etiqueta) {
+    const t = document.createElement("span");
+    t.className = "tag";
+    t.textContent = cat.etiqueta;
+    head.appendChild(t);
+  }
+  sec.appendChild(head);
+
+  const ul = document.createElement("ul");
+  ul.className = "items";
+  for (const [name, price] of cat.items) {
+    const li = document.createElement("li");
+    const n = document.createElement("span"); n.className = "name"; n.textContent = name;
+    const d = document.createElement("span"); d.className = "dots"; d.setAttribute("aria-hidden", "true");
+    const p = document.createElement("span"); p.className = "price"; p.textContent = fmt(price);
+    li.append(n, d, p);
+    ul.appendChild(li);
+  }
+  sec.appendChild(ul);
+  menu.appendChild(sec);
+}
+document.getElementById("updated").textContent = "Precios actualizados al " + ACTUALIZADO;
+</script>
+</body>
+</html>

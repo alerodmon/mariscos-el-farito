@@ -7,6 +7,7 @@
 
 const ACTUALIZADO = "13 de octubre de 2026";
 
+
 const MENU = [
   {
     id: "filets",
@@ -14,14 +15,13 @@ const MENU = [
     etiqueta: "Por kilo",
     items: [
       ["Corvina", 11500],
-      ["Dorado", 6500],
       ["Marlin blanco", 11500],
-      ["Marlin rojo", 6000],
+      ["Marlin rojo", 6500],
       ["Tilapia", 4000],
       ["Curvineta", 4000],
       ["Atún", 7500],
-      ["Congrio", 10500],
-      ["Salmón", 11500],
+      ["Congrio", 11000],
+      ["Salmón", 12000],
     ],
   },
   {
