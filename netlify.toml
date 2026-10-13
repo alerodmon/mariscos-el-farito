@@ -1,0 +1,13 @@
+# Configuración de Netlify para Mariscos El Farito.
+# Sitio estático: sin comando de build, se publica la raíz del repositorio.
+
+[build]
+  publish = "."
+  command = ""
+
+# Evitar que precios.js quede en caché: así los cambios de precio
+# se ven de inmediato en el celular de los clientes.
+[[headers]]
+  for = "/precios.js"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
